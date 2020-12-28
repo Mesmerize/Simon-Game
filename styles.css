@@ -1,0 +1,113 @@
+body {
+    text-align: center;
+    background-color: white;
+  }
+  
+  #level-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    margin:  5%;
+    color: black;
+  }
+  
+  .container {
+    display: block;
+    width: 50%;
+    margin: auto;
+  
+  }
+  
+  .btn {
+    margin: 25px;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 20%;
+  }
+  
+  .game-over {
+    background-color: red;
+    opacity: 0.8;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+  }
+
+  /* Custom Git Button */
+
+.btnn{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3498db;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .btnn i{
+    line-height: 90px;
+    font-size: 26px;
+    transition: 0.2s linear;
+  }
+  
+  .btnn:hover i{
+    transform: scale(1.3);
+    color: #f1f1f1;
+  }
+  
+  .btnn::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #3498db;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+  }
+  
+  .btnn:hover::before{
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+  }
+  
+  @keyframes aaa{
+    0%{
+        left: -110%;
+        top: 90%;
+    }
+  
+    50%{
+        left: 10%;
+        top: -30%;
+    }
+  
+    100%{
+        top: -10%;
+        left: -10%;
+    }
+  }
